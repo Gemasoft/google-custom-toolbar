@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Gmail Custom Toolbar",
+  "description": "This extension provides an easier way to access Google tools straight from Gmail",
+  "version": "2.4",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "options.html",
+    "default_title": "Thanks!"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "background":
+    {
+        "scripts": ["jquery.min.js", "actions.js"]
+    },
+  "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["jquery.min.js","actions.js"],    
+        "run_at": "document_end"        
+      }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
