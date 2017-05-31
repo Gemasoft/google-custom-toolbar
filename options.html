@@ -2,57 +2,73 @@
 <html>
 
 <head>
-    <title>My Test Extension Options</title>
+    <title>Gmail Custom Toolbar - Options</title>
 
-    <style>
-        body: {
-            padding: 10px;
-        }
-    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Options stylesheet -->    
+    <link rel="stylesheet" href="options.css">
+
 </head>
 
-<body style="width: 300px;">
+<body style="width: 400px;" class="container well">
 
-    <h3>Thanks for downloading!</h3>
+    <h3><strong>THANKS FOR DOWNLOADING!</strong></h3>
 
-    <h3>Options:</h3>
+    <h4>Select the apps to show in Gmail:</h3>
 
-    <div style="margin:20px !important;">
-    <label>
-     <input type="checkbox" id="calendar">
-     Calendar
-    </label>
-    </div>
+        <div style="margin:20px !important;">
 
-    <div style="margin:20px !important;">
-    <label>
-     <input type="checkbox" id="drive">
-     Drive
-    </label>
-    </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Calendar
+                    <div class="material-switch pull-right">
+                        <input id="calendar" name="calendar" type="checkbox" />
+                        <label for="calendar" class="label-primary"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Docs
+                    <div class="material-switch pull-right">
+                        <input id="docs" name="docs" type="checkbox" />
+                        <label for="docs" class="label-info"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Sheets
+                    <div class="material-switch pull-right">
+                        <input id="sheets" name="sheets" type="checkbox" />
+                        <label for="sheets" class="label-success"></label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    Drive
+                    <div class="material-switch pull-right">
+                        <input id="drive" name="drive" type="checkbox" />
+                        <label for="drive" class="label-warning"></label>
+                    </div>
+                </li>
 
-      <div style="margin:20px !important;">
-    <label>
-     <input type="checkbox" id="docs">
-     Docs
-    </label>
-    </div>
+            </ul>
 
-      <div style="margin:20px !important;">
-    <label>
-     <input type="checkbox" id="sheets">
-     Sheets
-    </label>
-    </div>
+            <div id="status" class="alert alert-success" role="alert" style="display:none;"></div>
+            <div class="row container">
+                <button id="save" class="btn btn-info pull-right" style="margin-bottom:20px !important;">Save</button>
+            </div>
+            <div>Created with <span style="color:red;">&#10084</span> by <a target="_blank" href="https://github.com/Gemasoft">Gerardo Martinez</a></div>
+            <a href="https://github.com/Gemasoft/gmail-custom-toolbar" target="_blank" id="version"></a>
 
-    <div id="status" style="margin:20px !important; color:cadetblue;"></div>
-    <button id="save"  style="margin-bottom:20px !important;">Save</button>
+            <script src="options.js"></script>
 
-    <div>Created with &#10084 by <a target="_blank" href="#">Gerardo Martinez</a></div>
-    <div id="version">Version 2.1</div>
-
-    <script src="options.js"></script>
-    
 </body>
 
 </html>

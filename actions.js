@@ -14,7 +14,6 @@ $(document).ready(function () {
             var btn = $(".gb_Z:has(a:has(span:contains('Calendar')))");
             if (btn[0] != undefined)
                 div.prepend(btn.clone().addClass("customButton")[0]);
-
         }
         if (items.sheets) {
             var btn = $(".gb_Z:has(a:has(span:contains('Hojas'), :contains('Spread'), :contains('Sheets')))");

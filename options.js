@@ -13,7 +13,8 @@ function save_options() {
       docs : docsEnabled
 }, function() {
           // Notify that we saved.
-          document.getElementById("status").innerHTML ='Settings saved, please reload gmail';
+          document.getElementById("status").style.display = 'block';
+          document.getElementById("status").innerHTML ='Settings saved! Please reload Gmail.';
         });
 }
 
