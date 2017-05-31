@@ -13,22 +13,23 @@ $(document).ready(function () {
         if (items.calendar) {
             var btn = $(".gb_Z:has(a:has(span:contains('Calendar')))");
             if (btn[0] != undefined)
-                div.prepend(btn.addClass("customButton")[0]);
+                div.prepend(btn.clone().addClass("customButton")[0]);
+
         }
         if (items.sheets) {
             var btn = $(".gb_Z:has(a:has(span:contains('Hojas'), :contains('Spread'), :contains('Sheets')))");
             if (btn[0] != undefined)
-                div.prepend(btn.addClass("customButton")[0]);
+                div.prepend(btn.clone().addClass("customButton")[0]);
         }
         if (items.docs) {
             var btn = $(".gb_Z:has(a:has(span:contains('Doc')))");
             if (btn[0] != undefined)
-                div.prepend(btn.addClass("customButton")[0]);
+                div.prepend(btn.clone().addClass("customButton")[0]);
         }
         if (items.drive) {
             var btn = $(".gb_Z:has(a:has(span:contains('Drive')))");
             if (btn[0] != undefined)
-                div.prepend(btn.addClass("customButton")[0]);
+                div.prepend(btn.clone().addClass("customButton")[0]);
         }
 
         //Align icons and remove text

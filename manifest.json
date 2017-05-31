@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Gmail Custom Toolbar",
   "description": "This extension provides an easier way to access Google tools straight from Gmail",
-  "version": "2.4",
+  "version": "2.5",
   "options_page": "options.html",
   "browser_action": {
     "default_icon": "icon.png",
