@@ -1,74 +1,72 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Gmail Custom Toolbar - Options</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-        crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <!-- Options stylesheet -->    
+    <title>Google Custom Toolbar - Options</title>
+    <!-- Options stylesheet -->
     <link rel="stylesheet" href="options.css">
-
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 </head>
 
-<body style="width: 400px;" class="container well">
+<body style="width: 420px;" class="well">
 
-    <h3><strong>THANKS FOR DOWNLOADING!</strong></h3>
+    <h4>
+        <strong>
+            <span>
+                <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png">
+            </span>
+            <span class="text-muted">Custom Toolbar</span>
+        </strong>
+    </h4>
 
-    <h4>Select the apps to show in Gmail:</h3>
+    <div class=" text-muted">Select the apps to show in Google Custom Toolbar:</div>
 
-        <div style="margin:20px !important;">
+    <div>
+        <ul class="list-group">
+            <li class="list-group-item text-muted">
+                Calendar
+                <div class="material-switch pull-right">
+                    <input id="calendar" name="calendar" type="checkbox" class="custom-button" />
+                    <label for="calendar" class="label-primary"></label>
+                </div>
+            </li>
+            <li class="list-group-item text-muted">
+                Docs
+                <div class="material-switch pull-right">
+                    <input id="docs" name="docs" type="checkbox" class="custom-button" />
+                    <label for="docs" class="label-info"></label>
+                </div>
+            </li>
+            <li class="list-group-item text-muted">
+                Sheets
+                <div class="material-switch pull-right">
+                    <input id="sheets" name="sheets" type="checkbox" class="custom-button" />
+                    <label for="sheets" class="label-success"></label>
+                </div>
+            </li>
+            <li class="list-group-item text-muted">
+                Drive
+                <div class="material-switch pull-right">
+                    <input id="drive" name="drive" type="checkbox" class="custom-button" />
+                    <label for="drive" class="label-warning"></label>
+                </div>
+            </li>
+        </ul>
 
-            <ul class="list-group">
-                <li class="list-group-item">
-                    Calendar
-                    <div class="material-switch pull-right">
-                        <input id="calendar" name="calendar" type="checkbox" />
-                        <label for="calendar" class="label-primary"></label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    Docs
-                    <div class="material-switch pull-right">
-                        <input id="docs" name="docs" type="checkbox" />
-                        <label for="docs" class="label-info"></label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    Sheets
-                    <div class="material-switch pull-right">
-                        <input id="sheets" name="sheets" type="checkbox" />
-                        <label for="sheets" class="label-success"></label>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    Drive
-                    <div class="material-switch pull-right">
-                        <input id="drive" name="drive" type="checkbox" />
-                        <label for="drive" class="label-warning"></label>
-                    </div>
-                </li>
+        <div class="row container">
+            <button id="save" class="btn btn-success pull-right" style="margin-bottom:10px;"><strong>Save</strong></button>
+        </div>
 
-            </ul>
+        <div id="status" class="alert alert-warning" role="alert">If you don't see the toolbar right after installing the extension please refresh the browser once.</div>
 
-            <div id="status" class="alert alert-success" role="alert" style="display:none;"></div>
-            <div class="row container">
-                <button id="save" class="btn btn-info pull-right" style="margin-bottom:20px !important;">Save</button>
-            </div>
-            <div>Created with <span style="color:red;">&#10084</span> by <a target="_blank" href="https://github.com/Gemasoft">Gerardo Martinez</a></div>
-            <a href="https://github.com/Gemasoft/gmail-custom-toolbar" target="_blank" id="version"></a>
+        <div class="text-muted small">Created with <span style="color:red;">&#10084</span> by <a target="_blank" href="https://github.com/Gemasoft">Gerardo Mart&iacute;nez</a></div>
 
-            <script src="options.js"></script>
+        <a href="https://github.com/Gemasoft/google-custom-toolbar" class="small" target="_blank" id="version"></a>
+
+        <!-- Options scripts file -->
+        <script src="options.js"></script>
 
 </body>
-
 </html>
